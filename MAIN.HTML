@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone Store</title>
+</head>
+<body>
+    <header>
+        
+        <a class="logo" href="#"><img src="imgs/logo.png" alt=""></a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="content">
+
+                <div class="info">
+                    <h1>Iphone 15 Pro Max</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quas cum dolorem aliquam ipsam sapiente explicabo nisi iste. Quas accusamus enim necessitatibus alias ratione labore officia veniam doloremque, velit explicabo eveniet, temporibus nemo ea voluptate?</p>
+                    <p>Lorem ipsum dolor  lorem100 sit, amet consectetur adipisicing elit. Saepe, quas sunt cum itaque mollitia ad rem sit assumenda autem, odio incidunt minima ipsum suscipit totam ex? Corporis nulla, facilis laudantium nesciunt non ad.</p>
+
+                    <a class="btn btn-1" href="#">ALL PRODUCTS</a>
+                </div>
+                <div class="main-img">
+                    <img class="image" src="imgs/abdelrahman gamal_0.png" alt="golden iphone">
+                </div>
+
+            </div>
+                <div class="other">
+                    <img width="50"      onclick="theme(this.src,'blue')" src="imgs/abdelrahman gamal_1.png" alt="">
+                    <img width="50"  onclick="theme(this.src ,'gray')"   src="imgs/abdelrahman gamal_2.png" alt="">
+                    <img width="50"  onclick="theme(this.src ,'goldenrod')"   src="imgs/abdelrahman gamal_3.png" alt="">
+                    <img width="50"  onclick="theme(this.src ,'red')"   src="imgs/abdelrahman gamal_4.png" alt="">
+            </div>
+        </div>
+    </main>
+    <script>
+        function theme(a,b){
+            let header = document.querySelector("header")
+            let main = document.querySelector("main");
+            let img = document.querySelector(".image");
+            img.src = a;
+            main.style.backgroundColor = b;
+            header.style.backgroundColor = b;
+
+            
+
+        }
+
+    </script>
+</body>
+</html>
